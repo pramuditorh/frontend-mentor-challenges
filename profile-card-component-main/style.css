@@ -7,6 +7,10 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
@@ -44,7 +48,7 @@ main {
     border-radius: 1rem;
 }
 
-.card__background {
+.card__header {
     background-image: url(./images/bg-pattern-card.svg);
     height: 18vh;
     border-radius: 1rem 1rem 0 0;
