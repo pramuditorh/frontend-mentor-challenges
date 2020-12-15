@@ -7,7 +7,7 @@
 
 body {
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--violet);
     background-image: url(./images/bg-desktop.svg);
 }
@@ -56,14 +56,15 @@ button:hover {
 }
 
 footer {
-    display: inline-flex;
-    float: right;
+    display: flex;
+    width: 20%;
+    margin-left: auto;
     justify-content: space-around;
     align-items: center;
     padding-right: 5rem;
 }
 
-.icon {
+footer .icon {
     display: flex;
     justify-content: center;
     align-items: center;
