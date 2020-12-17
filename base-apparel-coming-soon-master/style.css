@@ -171,6 +171,10 @@ p {
         display: none;
     }
 
+    h1 {
+        font-size: 45px;
+    }
+
     h1, p {
         text-align: center;
     }
