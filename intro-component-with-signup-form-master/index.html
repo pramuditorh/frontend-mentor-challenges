@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="main">
+    <div class="main__description">
+      <h1>Learn to code by <br> watching others</h1>
+
+      <p> 
+          See how experienced developers solve problems in real-time.<br>
+          Watching scripted tutorials is great, but understanding how <br> 
+          developers think is invaluable.
+      </p>
+    </div>
+    <div class="main__form">
+      <div class="box box--blue">
+        <p class="p-0">Try it free 7 days then $20/mo. thereafter</p>
+      </div>
+      <form id="form" class="box">
+        <div class="form__control">
+          <label for="first_name">
+            <input id="first_name" class="form__input" type="text" placeholder="First Name">
+            <img id="form-image-error" class="form__image-error" src="./images/icon-error.svg" alt="Error icon">
+            <small id="form-validation" class="form__validation"></small>
+          </label>
+        </div>
+        <div class="form__control">
+          <label for="last_name">
+            <input id="last_name" class="form__input" type="text" placeholder="Last Name">
+            <img id="form-image-error" class="form__image-error" src="./images/icon-error.svg" alt="Error icon">
+            <small id="form-validation" class="form__validation"></small>
+          </label>
+        </div>
+        <div class="form__control">
+          <label for="email">
+            <input id="email" class="form__input" type="email" placeholder="Email Address">
+            <img id="form-image-error" class="form__image-error" src="./images/icon-error.svg" alt="Error icon">
+            <small id="form-validation" class="form__validation"></small>
+          </label>
+        </div>
+        <div class="form__control">
+          <label for="password">
+            <input id="password" class="form__input" type="password" placeholder="Password">
+            <img id="form-image-error" class="form__image-error" src="./images/icon-error.svg" alt="Error icon">
+            <small id="form-validation" class="form__validation"></small>
+          </label>
+        </div>
+        <button class="form__button form__control">Claim your free trial</button>
+        <small class="form__tas">By clicking the button, you are agreeing to our <a class="form_tas--anchor" href="#">Terms and Services</a></small>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
