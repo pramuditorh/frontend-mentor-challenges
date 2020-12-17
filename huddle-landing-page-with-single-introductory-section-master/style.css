@@ -10,6 +10,7 @@ body {
     overflow: hidden;
     background-color: var(--violet);
     background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
 }
 
 .header {
@@ -23,6 +24,7 @@ body {
 }
 
 .main__description {
+    width: 50vw;
     margin: 0 3rem;
 }
 
@@ -37,6 +39,7 @@ p {
     font-size: 24px;
     font-weight: 300;
     color: #FFF;
+    padding-right: 5rem;
 }
 
 button {
@@ -57,18 +60,15 @@ button:hover {
 
 footer {
     display: flex;
-    width: 20%;
-    margin-left: auto;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 5rem;
+    justify-content: flex-end;
+    padding-right: 10rem;
 }
 
 footer .icon {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 1rem 5rem 1rem;
+    margin: 1rem;
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
@@ -79,4 +79,65 @@ footer .icon {
 .icon:hover {
     color: var(--soft-magenta);
     border: 2px solid var(--soft-magenta);
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        overflow-y: scroll;
+    }
+
+    .header {
+        margin: 2rem 2rem;
+    }
+    
+    .header__image {
+        width: 150px;
+    }
+
+    .main {
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+
+    .main__image {
+        width: 100%;
+    }
+
+    .main__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+    }
+
+    h1, p {
+        text-align: center;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 200px;
+        margin: 1rem auto;
+    }
+
+    footer {
+        padding: 0;
+        justify-content: center;
+        margin-top: 18rem;
+    }
 }
