@@ -138,6 +138,11 @@ footer .icon {
     footer {
         padding: 0;
         justify-content: center;
-        margin-top: 18rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        margin-top: 20rem;
     }
 }
